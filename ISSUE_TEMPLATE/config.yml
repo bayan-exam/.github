@@ -1,0 +1,8 @@
+blank_issues_enabled: true
+contact_links:
+  - name: Provenance concern, reported privately
+    url: mailto:hikma@cypherpunkzero.com
+    about: Email the maintainer directly if you would rather not open a public issue. Private reports are handled the same way.
+  - name: Security issue or exposed credential
+    url: https://github.com/hikma-exam/.github/blob/main/SECURITY.md
+    about: Never report these as a public issue. Read the security policy for the private route.

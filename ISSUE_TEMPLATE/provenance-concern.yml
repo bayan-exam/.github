@@ -1,0 +1,69 @@
+name: Provenance concern
+description: Report material in a Hikma repository that you believe copies a copyrighted work
+title: "[Provenance] "
+labels: ["provenance"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Use this form if you believe something published in a Hikma repository copies copyrighted material.
+
+        **If you would rather not report in public**, email <hikma@cypherpunkzero.com> instead. A private report is handled the same way as a public one.
+
+        **What happens next.** The affected material is quarantined where it is, not deleted, because the run manifests are the evidence of how it was made. Deleting the record first would destroy the audit trail that shows where the material came from. The entries we trace are then regenerated or removed, as the report warrants, and any published release that contains them is withdrawn and reissued.
+
+        This form is not a legal notice, and filing it does not give up any right you hold.
+
+  - type: dropdown
+    id: relationship
+    attributes:
+      label: Your relationship to the work
+      options:
+        - I am the rights holder
+        - I am authorised to act for the rights holder
+        - Neither, I am reporting something I noticed
+    validations:
+      required: true
+
+  - type: input
+    id: original-work
+    attributes:
+      label: The original work
+      description: Title, publisher, and a citation or link if one exists.
+      placeholder: "例: 日本語能力試験公式問題集 N3 (Japan Foundation / JEES, 2022), question 14"
+    validations:
+      required: true
+
+  - type: textarea
+    id: where
+    attributes:
+      label: Where it appears in Hikma
+      description: Be as exact as you can. A question `id`, a file path, a release tag, or a line reference all help us trace it back to the run that produced it.
+      value: |
+        Repository:
+        Release tag or commit:
+        Question id or file path:
+    validations:
+      required: true
+
+  - type: textarea
+    id: basis
+    attributes:
+      label: Basis of the claim
+      description: Why do you believe this copies the original, rather than looking similar because both follow the same exam format? Identical text, an unusual set of wrong options, or a distinctive sentence structure are all useful signals.
+    validations:
+      required: true
+
+  - type: input
+    id: contact
+    attributes:
+      label: Contact (optional)
+      description: Only if you want a reply somewhere other than this issue thread.
+
+  - type: checkboxes
+    id: confirm
+    attributes:
+      label: Before you submit
+      options:
+        - label: I have not pasted the copyrighted material itself into this issue. A citation or a description is enough, and pasting the material here would publish it again in a public repository.
+          required: true
