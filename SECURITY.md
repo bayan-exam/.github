@@ -9,7 +9,7 @@ Hikma is early. As of August 2026 the public repositories hold specification doc
 The realistic risks worth reporting:
 
 - **An exposed credential.** The pipeline runs against an Anthropic API key. A key, token, or other secret committed to a Hikma repository, left in a run manifest, or visible in build output is the most serious thing you can find here. Report it at once, and do not test it.
-- **A vulnerability in pipeline or review-interface code**, once that code exists. The pipeline is an offline batch job, not a live service that answers requests, so the risk is anything that lets an untrusted caller make model calls at all, and with them spend without limit against the project's API key.
+- **A vulnerability in pipeline or review-interface code**, once that code exists. The pipeline is an offline batch job, not a live service that answers requests, so the risk is anything that lets an untrusted caller make model calls at all. Left unchecked, that caller can spend without limit against the project's API key.
 - **A dependency vulnerability with a demonstrated path** into a Hikma repository. A scanner advisory with no reachable path does not help. A working path does.
 
 ## How to report
@@ -30,6 +30,6 @@ Please give the maintainer a fair chance to fix a problem before you disclose it
 
 Three things get reported here that belong elsewhere:
 
-- **Copyright and provenance concerns**, meaning material you believe copies a copyrighted exam or word list, go through the [Provenance concern](https://github.com/hikma-exam/hikma-jlpt/issues/new?template=provenance-concern.yml) issue template, or privately to the email address above. The organisation profile explains how those reports are handled.
+- **Copyright and provenance concerns**, meaning material you believe copies a copyrighted exam or word list, go through the [Provenance concern](https://github.com/hikma-exam/core/issues/new?template=provenance-concern.yml) issue template, or privately to the email address above. The organisation profile explains how those reports are handled.
 - **Wrong or badly levelled questions** are a data quality problem, not a security one. Open a normal issue on the repository that published the dataset.
 - **Scanner output with no reachable exploit path** will be closed with no action. Please establish the path first.

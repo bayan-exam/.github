@@ -1,6 +1,6 @@
 # Hikma
 
-Hikma builds practice questions for standardized exams and publishes them under an open license. Good practice material is hard to find for most exams, and almost all of it is proprietary.
+Hikma builds practice questions for standardized exams and will publish them under an open license. The architecture is public today; the first dataset is not out yet. Good practice material is hard to find for most exams, and almost all of it is proprietary.
 
 Hikma is meant to help two groups. People preparing for an exam get practice questions that cost nothing and that carry evidence of the level they are aimed at. People building a study app get a dataset to start from, so they do not have to generate, calibrate, and review a question bank of their own before anyone can use the app. Datasets are intended for release under CC BY 4.0. A code license never implies a dataset license, so read the license that ships with a given release.
 
@@ -26,6 +26,6 @@ Hikma is not affiliated with, endorsed by, sponsored by, or approved by any exam
 
 ## If you believe something here infringes
 
-Open a provenance concern on the repository that holds the material, or email <hikma@cypherpunkzero.com> to report it privately. Both routes are handled the same way, and the form says what happens next.
+Open a [provenance concern](https://github.com/hikma-exam/core/issues/new?template=provenance-concern.yml) on the repository that holds the material, or email <hikma@cypherpunkzero.com> to report it privately. Both routes are handled the same way, and the form says what happens next.
 
 Maintained by [Chairul Akmal](https://chairulakmal.com).

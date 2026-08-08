@@ -30,7 +30,7 @@ body:
     attributes:
       label: The original work
       description: Title, publisher, and a citation or link if one exists.
-      placeholder: "例: 日本語能力試験公式問題集 N3 (Japan Foundation / JEES, 2022), question 14"
+      placeholder: "e.g. Official Practice Test, Publisher Name, Year, question 14"
     validations:
       required: true
 
